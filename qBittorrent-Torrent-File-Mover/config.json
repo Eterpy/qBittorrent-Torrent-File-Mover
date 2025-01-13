@@ -1,0 +1,17 @@
+{
+    "qbittorrent": {
+        "url": "http://localhost:8080",
+        "username": "eternal_change",
+        "password": "ypb041205"
+    },
+    
+    "target_dir": "/Users/baopengyu/Movies/番剧",
+
+    "patterns": {
+        "Ave Mujica": "ave mujica",
+        "Hana wa Saku Shura no Gotoku": "hana wa saku shura no gotoku",
+        "Medalist": "medalist", 
+        "Ao no Hako": "ao no hako",
+        "Ranma": "Ranma"
+    }
+}
