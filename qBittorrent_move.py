@@ -7,9 +7,12 @@ import logging
 logging.basicConfig(filename='Torrent_Move.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def load_config(config_file):
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    config_file = os.path.join(script_dir, "config.json")
+    
     with open(config_file, 'r', encoding='utf-8') as f:
         config = json.load(f)
-
+    
     required_fields = ['qbittorrent', 'target_dir', 'patterns']
     for field in required_fields:
         if field not in config:
